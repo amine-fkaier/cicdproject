@@ -28,7 +28,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'aminefkaier', variable: 'amine')]) {
-                        sh "docker login -u aminefkaier -p ${amine1997}"
+                        sh "docker login -u aminefkaier -p ${123456789}"
                    }
                    sh 'docker push aminefkaier/springbootcicd'
                 }
