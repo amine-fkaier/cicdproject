@@ -45,6 +45,7 @@
 				<version>1.2.0</version>
 				<configuration>
 					<baseImage>adoptopenjdk/openjdk11</baseImage>
+					<imageName>adoptopenjdk/openjdk11</imageName>
 				</configuration>
 			</plugin>
 		</plugins>
