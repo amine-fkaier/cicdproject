@@ -30,7 +30,7 @@ pipeline {
                 withCredentials([string(credentialsId: 'devops', variable: 'devops')]) {
                     sh "docker login -u aminefkaier -p ${123456789}"
                 }
-                   sh 'docker push minefkaier/devops-project'
+                   sh 'docker push aminefkaier/devops-project'
                 }
             }
         }
