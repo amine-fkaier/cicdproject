@@ -24,5 +24,15 @@ pipeline {
                 sh 'docker run -p 8080:8080 -t myapp'
             }
         }
+        stage('Push image to Hub'){
+            steps{
+                script{
+                   withCredentials([string(credentialsId: 'aminefkaier', variable: 'amine')]) {
+                        sh "docker login -u aminefkaier -p ${amine1997}"
+                   }
+                   sh 'docker push aminefkaier/springbootcicd'
+                }
+            }
+        }
     }
 }
