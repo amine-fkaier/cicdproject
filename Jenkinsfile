@@ -16,12 +16,12 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'sudo mvn docker:build'
+                sh 'mvn docker:build'
             }
         }
         stage('Run Docker Image') {
             steps {
-                sh 'sudo docker run -p 8080:8080 -t myapp'
+                sh 'docker run -p 8080:8080 -t myapp'
             }
         }
     }
