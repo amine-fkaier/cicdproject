@@ -1,4 +1,4 @@
-FROM fundingsocietiesdocker/openjdk:11-jdk
+FROM adoptopenjdk/openjdk11
 EXPOSE 8080
 ARG APP_NAME="cicdproject"
 ARG APP_VERSION="0.0.1"
