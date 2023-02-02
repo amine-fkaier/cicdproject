@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Run Docker Image') {
             steps {
-                sh 'docker run -p 8080:8080 -t aminefkaier/springbootcicd'
+                sh 'docker run -p 2375:2375 -t aminefkaier/springbootcicd'
             }
         }
         stage('Push image to Hub'){
