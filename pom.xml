@@ -46,7 +46,6 @@
 				<configuration>
 					<baseImage>adoptopenjdk/openjdk11</baseImage>
 					<imageName>aminefkaier/springbootcicd</imageName>
-					<entryPoint>["java", "-jar", "/maven/${project.build.finalName}.jar"]</entryPoint>
 				</configuration>
 			</plugin>
 		</plugins>
