@@ -43,18 +43,8 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>1.2.0</version>
-				<executions>
-					<execution>
-						<id>default</id>
-						<goals>
-							<goal>build</goal>
-							<goal>push</goal>
-						</goals>
-					</execution>
-				</executions>
 				<configuration>
-					<baseImage>adoptopenjdk/openjdk11</baseImage>
-					<repository>aminefkaier/firstproject</repository>
+					<imageName>adoptopenjdk/openjdk11</imageName>
 				</configuration>
 			</plugin>
 		</plugins>
