@@ -27,9 +27,9 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                   withCredentials([string(credentialsId: 'aminefkaier', variable: 'amine')]) {
-                        sh "docker login -u aminefkaier -p ${123456789}"
-                   }
+                withCredentials([string(credentialsId: 'devops', variable: 'devops')]) {
+                    sh "docker login -u aminefkaier -p ${123456789}"
+                }
                    sh 'docker push aminefkaier/springbootcicd'
                 }
             }
