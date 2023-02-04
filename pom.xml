@@ -40,8 +40,8 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>1.2.0</version>
 				<configuration>
-					<baseImage>cicdproject</baseImage>
-					<imageName>cicdproject</imageName>
+					<baseImage>openjdk</baseImage>
+					<imageName>aminefkaier/cicdproject</imageName>
 				</configuration>
 			</plugin>
 		</plugins>
