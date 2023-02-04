@@ -47,7 +47,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<finalName>devops-integration</finalName>
+		<finalName>cicdproject</finalName>
 	</build>
 
 </project>
