@@ -47,7 +47,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<finalName>cicdproject</finalName>
 	</build>
 
 </project>
