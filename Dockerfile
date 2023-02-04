@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11
+FROM openjdk:11-jdk-slim
 EXPOSE 8080
 ARG APP_NAME="cicdproject"
 ARG APP_VERSION="0.0.1"
