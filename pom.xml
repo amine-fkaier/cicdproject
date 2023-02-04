@@ -39,6 +39,10 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>1.2.0</version>
+				<configuration>
+					<baseImage>cicdproject</baseImage>
+					<imageName>cicdproject</imageName>
+				</configuration>
 			</plugin>
 		</plugins>
 		<finalName>cicdproject</finalName>
