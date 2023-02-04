@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Run Docker Image') {
             steps {
-                sh 'docker run -p 8080:800 -t aminefkaier/cicdproject'
+                sh 'docker run -p 2375:2375 -t aminefkaier/cicdproject'
             }
         }
         stage('Push image to Hub'){
