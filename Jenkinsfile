@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'mvn docker:build'
+                sh 'docker build -t aminefkaier/cicdproject .'
             }
         }
 //         stage('Run Docker Image') {
