@@ -19,11 +19,6 @@ pipeline {
                 sh 'docker build -t aminefkaier/cicdproject .'
             }
         }
-        stage('Run Docker Image') {
-            steps {
-                sh 'docker run -p 2375:2375 -t aminefkaier/cicdproject'
-            }
-        }
         stage('Push image to Hub'){
             steps{
                 script{
